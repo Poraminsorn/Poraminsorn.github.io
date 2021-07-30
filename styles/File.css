@@ -30,3 +30,6 @@ img {
 .center{
     text-align: center;
 }
+.bor{
+    border: solid;
+}
