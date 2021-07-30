@@ -33,3 +33,10 @@ img {
 .bor{
     border: solid;
 }
+#heading{
+    color: blue;
+}
+.popular{
+    border: dotted 4px red;
+    
+}
