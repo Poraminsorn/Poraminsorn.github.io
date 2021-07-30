@@ -1,0 +1,33 @@
+.font-red{
+    color: red;
+}
+.font-green{
+    color: green;
+    text-align: right;                      
+}
+.font-blue-class{
+    color: blue;
+    text-align: center;
+}
+.font-turquoise{
+    color:darkturquoise;
+    text-align: left;
+    font-style: italic;
+    border: 2px solid;
+}
+.font-olivegreen{
+    color:darkolivegreen;
+    text-align: center;
+    font-weight: bold ;
+    border: 3px dotted;
+}
+#font-id{
+    color: blue;
+    text-align: center;
+}
+#font-pink{
+    color: darkmagenta;
+    text-align: right;
+    font-size: large;
+    border: 4px dashed yellow;
+}
