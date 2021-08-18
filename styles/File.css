@@ -38,5 +38,61 @@ img {
 }
 .popular{
     border: dotted 4px red;
-    
+}
+
+@media only screen and (max-width:568px) and (min-width:320px) {
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 220px;
+    }
+    h1 {
+        font-size: 25px;
+    }
+    p{
+        font-size: 5px;
+    }
+}
+@media (orientation: landscape) and (max-width: 568px) {
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 450px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1024px) and (min-width:768px) {
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 600px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    p{
+        font-size: 30px;
+    }
+}
+@media (orientation: landscape) and (max-width: 1024px) {
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        width: 850px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p{
+        font-size: 15px;
+    }
 }
