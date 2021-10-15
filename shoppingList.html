@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list example</title>
+    <style>
+      li {
+        margin-bottom: 10px;
+      }
+
+      li button {
+        font-size: 8px;
+        margin-left: 20px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My shopping list</h1>
+
+    <div>
+      <label for="item">Enter a new item:</label>
+      <input type="text" name="item" id="item" />
+      <button>Add item</button>
+    </div>
+
+    <ul></ul>
+
+    <script>
+      var item = document.getElementById("item");
+      var ulList = document.getElementsByTagName("ul")[0];
+      var para = document.createElement("p");
+      document.body.appendChild(para);
+      
+      document
+        .getElementsByTagName("button")[0]
+        .addEventListener("click", (e) => {
+        
+          var liList = document.createElement("li");
+          var buttonDel = document.createElement("button");
+          buttonDel.innerHTML = "Delete";
+          liList.innerHTML = item.value; //add item to list
+          liList.appendChild(buttonDel); //add button to list
+          ulList.appendChild(liList); //add list to ul
+          
+          
+          
+        
+          function check_item() {
+            //function check number of list item
+            if (ulList.children.length > 1) {
+              para.innerHTML =
+                "The list has " + ulList.children.length + " items";
+            } else {
+              para.innerHTML =
+                "The list has " + ulList.children.length + " item";
+            }
+          }
+        
+
+          check_item();
+
+          function del_li() {
+            ulList.removeChild(liList);
+            check_item();
+          }
+          buttonDel.addEventListener("click", del_li); 
+        
+        });
+      
+    </script>
+  </body>
+</html>

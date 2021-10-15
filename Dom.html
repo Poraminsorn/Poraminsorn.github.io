@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple DOM example</title>
+</head>
+<body>
+    <section>
+        <img src="images/kku.jpg" alt="KKU">
+        <p>Here we will add a link to the
+            <a href="http://www.kku.ac.th">KKU</a>
+        </p>
+    </section>
+    <script>
+        var image = document.getElementsByTagName("img")[0]
+        image.onclick = function () {
+            window.location.href = "https://www.en.kku.ac.th/web/en/"
+        };
+        let text = document.getElementsByTagName("p")[0]
+        text.innerHTML = "We hope you enjoy learning"
+        text.style.backgroundColor = 'black';
+        text.style.padding = '10px';
+        text.style.color = 'white';
+        text.style.width = '250px';
+        text.style.fontSize = '20px';
+        image.style.width = '30%';
+    </script>
+</html>

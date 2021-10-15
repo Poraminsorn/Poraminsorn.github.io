@@ -20,13 +20,27 @@
                 position: absolute;
                 width: 30px;
                 height: 30px;
-                border-radius: 50%;
-                background: rgb(237, 237, 237);
+                border-radius: 50%; 
             }
         </style>
     </head>
     <body>
-    <script>  
+    <script>
+        var myPlanet = document.createElement("div");
+        myPlanet.className = "planet";
+        myPlanet.style.backgroundColor = "white";
+        document.body.appendChild(myPlanet);
+
+        var myMoon = document.createElement("div");
+        myMoon.className = "moon";
+        myMoon.style.backgroundColor = "orange";
+        document.getElementsByClassName("planet")[0].appendChild(myMoon);
+
+        var myText = document.createElement("div");
+        myText.textContent = "The planet and the moon";
+        myText.style.color = "green";
+        document.body.appendChild(myText);
+        
     </script>
     </body>
 </html>
